@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Attendance – Class Attendance Management</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section id="login">
+  <form class="login-card" id="loginForm">
+    <div class="logo">✓</div>
+    <h1>Class Attendance</h1>
+    <p class="sub">Teacher portal · National University</p>
+    <label for="tid">Teacher ID</label>
+    <input id="tid" placeholder="Enter teacher ID" autocomplete="username">
+    <label for="tpw">Password</label>
+    <input id="tpw" type="password" placeholder="Enter password" autocomplete="current-password">
+    <p class="err" id="loginErr"></p>
+    <button class="btn" type="submit">Sign in to dashboard</button>
+    <p class="sub" style="font-size:12px;margin-top:16px">Demo login: <b>teacher</b> · Password: <b>1234</b></p>
+  </form>
+</section>
+
+<div id="app" class="hidden">
+  <aside>
+    <div class="brand"><div class="logo">✓</div><div><b>Attendance</b><small>Teacher Portal</small></div></div>
+    <nav id="nav">
+      <button data-p="dashboard">Dashboard</button>
+      <button data-p="attendance">Take Attendance</button>
+      <button data-p="students">Students</button>
+      <button data-p="courses">Courses</button>
+      <button data-p="report">Semester Report</button>
+    </nav>
+    <div class="foot">Class Attendance Management System<br>National University · Demo project</div>
+  </aside>
+  <main>
+    <header>
+      <div class="crumb">Workspace / <b id="crumb">Dashboard</b></div>
+      <div class="user"><div><b>Saleh Muhammad Maruf</b><small>Course instructor</small></div><div class="avatar">SM</div><button class="link" id="logout">Logout</button></div>
+    </header>
+    <div id="view"></div>
+  </main>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
